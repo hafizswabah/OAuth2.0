@@ -3,7 +3,7 @@ import axios from "axios"
 
 
 export async function auth(req, res) {
-
+console.log('auth route works');
     const redirectUrl = "http://localhost:3000"
 
     const oAuth2Client = new OAuth2Client(
@@ -15,7 +15,7 @@ export async function auth(req, res) {
     const authorizedUrl = oAuth2Client.generateAuthUrl({
         access_type: "offline",
         scope: "https://www.googleapis.com/auth/userinfo.profile openid",
-        prompt: "consetnt"
+        prompt: "consent"
     })
     res.json({ url: authorizedUrl })
 }
