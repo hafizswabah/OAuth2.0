@@ -40,7 +40,7 @@ export async function authentication(req, res) {
         const user = oAuth2Client.credentials;
         console.log('creditials', user);
         await getUserData(user.access_token)
-        res.json({err:false,message:"user details fetched succesfully"})
+        res.redirect("http://localhost:3000")
       
     } catch (err) {
         console.log('login err', err);
