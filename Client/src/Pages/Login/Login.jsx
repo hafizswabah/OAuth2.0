@@ -26,7 +26,9 @@ function Login() {
                             <label htmlFor="">Password</label>
                             <input type="text" className='login-input' />
                         </div>
-                        <button className='login-btn' onClick={handLogin}>Login</button>
+                        <button className='login-btn'>Login</button>
+                        <div className='google-login-btn' onClick={handLogin}>
+                            <img src="/images/GoogleIcon.png" alt="" className='google-icon'/>Login with google</div>
                     </div>
 
                 </div>
