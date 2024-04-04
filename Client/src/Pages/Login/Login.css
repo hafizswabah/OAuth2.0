@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .Login-page{
     width: 100%;
     display: flex;
@@ -21,11 +24,12 @@
     display: flex;
     flex-direction: column;
     padding: 5px;
+  
 }
 .login-input{
     margin-top: 10px;
     width: 221px;
-    height: 41px;
+    height: 33px;
     border: 1px solid #2649d166;
     border-radius: 5px;
 }
