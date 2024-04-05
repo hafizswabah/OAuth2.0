@@ -8,8 +8,8 @@ function Login() {
     }
 
     async function handLogin() {
-        let data = await axios.post("http://localhost:8888/user/request")
-        navigate(data.data.url)
+        let response = await axios.post("/user/request")
+        navigate(response.data.url)
     }
 
     return (

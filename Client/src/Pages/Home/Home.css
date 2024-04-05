@@ -26,6 +26,7 @@
     background-color: rgba(0, 0, 255, 0.507);
     color: white;
     transition: all 0.3sec ease;
+    cursor: pointer;
 }
 .home-page{
     display: flex;
